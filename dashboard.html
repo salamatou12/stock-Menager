@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Gestion de Stock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <h2>Gestion de Stock - Produits Électroniques</h2>
+
+    <div class="right">
+        <div class="notif">
+            <i class="fa-solid fa-bell"></i>
+            <span>3</span>
+        </div>
+
+        <div class="user">
+            <i class="fa-solid fa-user-circle"></i>
+            Administrateur
+        </div>
+    </div>
+</header>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <!-- Bloc du haut -->
+    <div class="top-side">
+        <h3 class="logo"><i class="fa-solid fa-chart-line"></i> Dashboard</h3>
+
+        <ul class="menu">
+            <li class="active"><i class="fa-solid fa-table-columns"></i> Tableau de Bord</li>
+            <li><i class="fa-solid fa-chart-simple"></i> Analytics</li>
+            <a class="commandes" href="./comande.html">
+            <li><i class="fa-solid fa-bag-shopping"></i> Commandes</li>
+            
+
+            </a>
+            <li><i class="fa-solid fa-gear"></i> Paramètres</li>
+            <li><i class="fa-solid fa-file-lines"></i> Rapports</li>
+            <li><i class="fa-solid fa-bell"></i> Notifications</li>
+        </ul>
+    </div>
+
+    <!-- Bloc du bas -->
+    <div class="bottom-side">
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+            <div>
+                <h4>Administrateur</h4>
+                <p>Gestionnaire</p>
+            </div>
+        </div>
+
+        <button class="logout">Déconnexion</button>
+    </div>
+
+</aside>
+
+
+<!-- MAIN CONTENT -->
+<main class="content">
+
+    <!-- TITRE -->
+    <section class="title">
+        <h1>Tableau de Bord Principal</h1>
+        <p>Gestion des stocks de produits électroniques</p>
+    </section>
+
+    <!-- CARDS -->
+    <section class="cards">
+
+        <div class="card">
+            <div class="icon blue"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <div class="info">
+                <h3>1,234</h3>
+                <p>Produits en Stock</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon orange"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div class="info">
+                <h3>23</h3>
+                <p>Stock Faible</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon green"><i class="fa-solid fa-euro-sign"></i></div>
+            <div class="info">
+                <h3>€45,678</h3>
+                <p>Valeur Totale</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon grey"><i class="fa-solid fa-truck"></i></div>
+            <div class="info">
+                <h3>12</h3>
+                <p>Commandes en Attente</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- TABLEAU STOCKS -->
+    <section class="table-section">
+
+        <div class="top-table">
+            <h2>Gestion des Stocks</h2>
+
+            <div class="actions">
+                <div class="search">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Rechercher un produit...">
+                </div>
+
+                <button class="btn add"><i class="fa-solid fa-plus"></i> Ajouter Produit</button>
+                <button class="btn export"><i class="fa-solid fa-download"></i> Exporter</button>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>PRODUIT</th>
+                <th>CATEGORIE</th>
+                <th>STOCK</th>
+                <th>PRIX</th>
+                <th>STATUT</th>
+                <th>ACTIONS</th>
+            </tr>
+
+            <tr>
+                <td>#001</td>
+                <td>
+                    <div class="product">
+                        <i class="fa-solid fa-laptop"></i>
+                        <div>
+                            MacBook Pro 16"<br>
+                            <small>Apple - M3 Pro</small>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="tag blue">LAPTOP</span></td>
+                <td><span class="stock green">15</span></td>
+                <td>€2,899</td>
+                <td><span class="status active">Actif</span></td>
+                <td>
+                    <i class="fa-solid fa-pen-to-square edit"></i>
+                    <i class="fa-solid fa-trash delete"></i>
+                </td>
+            </tr>
+               <tr>
+                <td>#001</td>
+                <td>
+                    <div class="product">
+                        <i class="fa-solid fa-laptop"></i>
+                        <div>
+                            MacBook Pro 16"<br>
+                            <small>Apple - M3 Pro</small>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="tag blue">LAPTOP</span></td>
+                <td><span class="stock green">15</span></td>
+                <td>€2,899</td>
+                <td><span class="status active">Actif</span></td>
+                <td>
+                    <i class="fa-solid fa-pen-to-square edit"></i>
+                    <i class="fa-solid fa-trash delete"></i>
+                </td>
+            </tr>
+               <tr>
+                <td>#001</td>
+                <td>
+                    <div class="product">
+                        <i class="fa-solid fa-laptop"></i>
+                        <div>
+                            MacBook Pro 16"<br>
+                            <small>Apple - M3 Pro</small>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="tag blue">LAPTOP</span></td>
+                <td><span class="stock green">15</span></td>
+                <td>€2,899</td>
+                <td><span class="status active">Actif</span></td>
+                <td>
+                    <i class="fa-solid fa-pen-to-square edit"></i>
+                    <i class="fa-solid fa-trash delete"></i>
+                </td>
+            </tr>
+               <tr>
+                <td>#001</td>
+                <td>
+                    <div class="product">
+                        <i class="fa-solid fa-laptop"></i>
+                        <div>
+                            MacBook Pro 16"<br>
+                            <small>Apple - M3 Pro</small>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="tag blue">LAPTOP</span></td>
+                <td><span class="stock green">15</span></td>
+                <td>€2,899</td>
+                <td><span class="status active">Actif</span></td>
+                <td>
+                    <i class="fa-solid fa-pen-to-square edit"></i>
+                    <i class="fa-solid fa-trash delete"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>#002</td>
+                <td>
+                    <div class="product">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <div>
+                            iPhone 15 Pro<br>
+                            <small>Apple - 128GB</small>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="tag green">SMARTPHONE</span></td>
+                <td><span class="stock orange">8</span></td>
+                <td>€1,199</td>
+                <td><span class="status active">Actif</span></td>
+                <td>
+                    <i class="fa-solid fa-pen-to-square edit"></i>
+                    <i class="fa-solid fa-trash delete"></i>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+
+</main>
+
+</body>
+</html>

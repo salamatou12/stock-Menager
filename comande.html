@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Stock</title>
+    <link rel="stylesheet" href="comand.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2 class="logo"><i class="fa-solid fa-chart-line"></i> Dashboard</h2>
+
+        <ul class="menu">
+            <li><i class="fa-solid fa-home"></i> Tableau de Bord</li>
+            <li><i class="fa-solid fa-chart-pie"></i> Analytics</li>
+            <li class="active"><i class="fa-solid fa-cart-shopping"></i> Commandes</li>
+            <li><i class="fa-solid fa-gear"></i> Paramètres</li>
+            <li><i class="fa-solid fa-file-lines"></i> Rapports</li>
+            <li><i class="fa-solid fa-bell"></i> Notifications</li>
+        </ul>
+
+        <div class="profil">
+            <i class="fa-solid fa-user"></i>
+            <div>
+                <h4>Administrateur</h4>
+                <p>Gestionnaire</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <header class="topbar">
+            <h1>Gestion de Stock - Produits Électroniques</h1>
+
+            <div class="right">
+                <div class="notif">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>3</span>
+                </div>
+                <div class="admin">
+                    <i class="fa-solid fa-user"></i> Administrateur
+                </div>
+            </div>
+        </header>
+
+        <!-- CARTE 1 -->
+        <section class="order-card">
+            <div class="card-header">
+                <h3>Commande #CMD-2024-002</h3>
+                <span class="status ongoing">En cours</span>
+            </div>
+
+            <p>Client : Marie Martin</p>
+            <p>Date : 14 Jan 2024</p>
+
+            <div class="product">
+                <i class="fa-solid fa-laptop"></i>
+                <div class="info">
+                    <h4>MacBook Pro 16" <span>M3 Pro - 512GB</span></h4>
+                </div>
+                <span class="qty">x1</span>
+                <span class="price">€2,899.00</span>
+            </div>
+
+            <div class="actions">
+                <button class="details"><i class="fa-solid fa-eye"></i> Voir détails</button>
+                <button class="edit"><i class="fa-solid fa-pen"></i> Modifier</button>
+                <button class="ship"><i class="fa-solid fa-truck"></i> Expédier</button>
+            </div>
+        </section>
+
+        <!-- CARTE 2 -->
+        <section class="order-card">
+            <div class="card-header">
+                <h3>Commande #CMD-2024-003</h3>
+                <span class="status shipped">Expédiée</span>
+            </div>
+
+            <p>Client : Pierre Durand</p>
+            <p>Date : 13 Jan 2024</p>
+
+            <div class="product">
+                <i class="fa-solid fa-headphones"></i>
+                <div class="info">
+                    <h4>AirPods Pro 2 <span>USB-C</span></h4>
+                </div>
+                <span class="qty">x2</span>
+                <span class="price">€558.00</span>
+            </div>
+
+            <div class="actions">
+                <button class="details"><i class="fa-solid fa-eye"></i> Voir détails</button>
+                <button class="follow"><i class="fa-solid fa-location-dot"></i> Suivre</button>
+                <button class="delivered"><i class="fa-solid fa-check"></i> Marquer livrée</button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

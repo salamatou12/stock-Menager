@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - Gestion Stock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./analytics-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="navbar">
+    <h2>Gestion de Stock - Produits Électroniques</h2>
+
+    <div class="right">
+        <div class="notif">
+            <i class="fa-solid fa-bell"></i>
+            <span>3</span>
+        </div>
+
+        <div class="user">
+            <i class="fa-solid fa-user-circle"></i>
+            Administrateur
+        </div>
+    </div>
+</header>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2 class="logo"><i class="fa-solid fa-chart-line"></i> Dashboard</h2>
+
+        <ul class="menu">
+            <li class="active"><i class="fa-solid fa-table-columns"></i> Tableau de Bord</li>
+
+            <a href="analityc.html">
+            <li><i class="fa-solid fa-chart-simple"></i> Analytics</li>
+
+            </a>
+
+
+            <li><i class="fa-solid fa-bag-shopping"></i> Commandes</li>
+            <li><i class="fa-solid fa-gear"></i> Paramètres</li>
+            <li><i class="fa-solid fa-file-lines"></i> Rapports</li>
+            <li><i class="fa-solid fa-bell"></i> Notifications</li>
+        </ul>
+
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+            <div>
+                <h4>Administrateur</h4>
+                <p>Gestionnaire</p>
+            </div>
+        </div>
+
+        <button class="logout">Déconnexion</button>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- DASHBOARD TITLE -->
+        <section class="title">
+            <h2>Tableau de Bord Principal</h2>
+            <p>Gestion des stocks de produits électroniques</p>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header -->
+            <div class="content-header">
+                <div>
+                    <h2 class="section-title">
+                        <span class="title-icon">📈</span>
+                        Analytics & Rapports
+                    </h2>
+                    <p class="section-subtitle">Analyse complète des performances et tendances</p>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card blue">
+                    <div class="stat-icon-box">
+                        <span class="stat-emoji">📊</span>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">€45,678</div>
+                        <div class="stat-label">Chiffre d'affaires</div>
+                        <div class="stat-change positive">+12.5%</div>
+                    </div>
+                </div>
+
+                <div class="stat-card green">
+                    <div class="stat-icon-box">
+                        <span class="stat-emoji">🛒</span>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">1,234</div>
+                        <div class="stat-label">Commandes</div>
+                        <div class="stat-change positive">+8.2%</div>
+                    </div>
+                </div>
+
+                <div class="stat-card orange">
+                    <div class="stat-icon-box">
+                        <span class="stat-emoji">👥</span>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">856</div>
+                        <div class="stat-label">Nouveaux clients</div>
+                        <div class="stat-change negative">-2.1%</div>
+                    </div>
+                </div>
+
+                <div class="stat-card red">
+                    <div class="stat-icon-box">
+                        <span class="stat-emoji">%</span>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">3.4%</div>
+                        <div class="stat-label">Taux de conversion</div>
+                        <div class="stat-change positive">+0.3%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-container">
+                <!-- Sales Evolution Chart -->
+                <div class="chart-card large">
+                    <div class="chart-header">
+                        <div>
+                            <h3 class="chart-title">
+                                <span class="chart-icon">📊</span>
+                                Évolution des Ventes
+                            </h3>
+                        </div>
+                        <select class="period-select">
+                            <option>30 derniers jours</option>
+                            <option>7 derniers jours</option>
+                            <option>90 derniers jours</option>
+                        </select>
+                    </div>
+                    <div class="chart-area">
+                        <div class="bar-chart">
+                            <div class="bar" style="height: 45%"></div>
+                            <div class="bar" style="height: 40%"></div>
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 55%"></div>
+                            <div class="bar" style="height: 70%"></div>
+                            <div class="bar" style="height: 62%"></div>
+                            <div class="bar" style="height: 85%"></div>
+                            <div class="bar" style="height: 78%"></div>
+                            <div class="bar" style="height: 68%"></div>
+                            <div class="bar" style="height: 82%"></div>
+                            <div class="bar" style="height: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category Distribution -->
+                <div class="chart-card small">
+                    <div class="chart-header">
+                        <h3 class="chart-title">
+                            <span class="chart-icon">📊</span>
+                            Répartition par Catégorie
+                        </h3>
+                    </div>
+                    <div class="category-list">
+                        <div class="category-item">
+                            <div class="category-info">
+                                <span class="category-name">Smartphones</span>
+                                <span class="category-percent">35%</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-progress" style="width: 35%"></div>
+                            </div>
+                            <div class="category-value">€15,980</div>
+                        </div>
+
+                        <div class="category-item">
+                            <div class="category-info">
+                                <span class="category-name">Laptops</span>
+                                <span class="category-percent">25%</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-progress" style="width: 25%"></div>
+                            </div>
+                            <div class="category-value">€11,415</div>
+                        </div>
+
+                        <div class="category-item">
+                            <div class="category-info">
+                                <span class="category-name">Tablettes</span>
+                                <span class="category-percent">20%</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-progress" style="width: 20%"></div>
+                            </div>
+                            <div class="category-value">€9,132</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+       
+
+    </main>
+
+</div>
+
+</body>
+</html>

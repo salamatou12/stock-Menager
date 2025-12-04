@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="style_dashbord_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="logo">
+            <h2>Gestion de Stock - Produits Électroniques</h2>
+            <div class="admins">
+                <div class="notif">3</div>
+                <div class="notif1"><i class="fa-solid fa-bell"></i></div>
+                <div class="icons"><i class="fa-solid fa-circle-user"></i>
+                    <h2>Administrateur</h2>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <div class="menu">
+                <i class="fa-solid fa-chart-line"></i>
+                <h1>Dashbord</h1>
+            </div>
+            <div class="menu-acceuil">
+                <div class="nav">
+                    <a href="index_table_de_bord.html"><i class="fa-solid fa-gauge-high"></i> Tableau de Bord</a>
+                    <a href="index_analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                    <a href="index_commande.html"><i class="fa-solid fa-cart-plus"></i> Commandes</a>
+                    <a href="index_parametre.html"><i class="fa-solid fa-gears"></i> paramètre</a>
+                    <a href="index_rapport.html"> <i class="fa-solid fa-chart-bar"></i> Rapports</a>
+                    <a href="index_notification.html" class="bleu_tab"><i class="fa-solid fa-bell"></i>
+                        Notifications</a>
+                </div>
+
+                <div class="sitting">
+                    <div class=" admin"> <i class="fa-solid fa-circle-user"></i>
+                        <p>Administrateur Gestionnaire</p>
+                    </div>
+                    <div class=" Profil"> <i class="fa-solid fa-circle-user"></i>
+                        <a href="#sultan" id="close">
+                            <p>Mon profil</p>
+                        </a>
+                    </div>
+                    <div class=" connecter"> <i class="fa-solid fa-arrow-right-to-bracket"></i><a href="index.html">Se
+                            Deconnecter</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="Bord_principal_notif">
+        <div class="titre">
+            <h1> <i class="fa-solid fa-bell"></i> Notifications & Alertes</h1>
+            <p>Centre de notifications et gestion des alertes système</p>
+        </div>
+        <div class="gestion">
+            <div class="cards_notif">
+                <div class="imoj1_notif"><i class="fa-solid fa-envelope"></i></div>
+                <div class="cards1">
+                    <h2>12</h2>
+                    <p>Non lues</p>
+                </div>
+            </div>
+
+            <div class="cards_notif">
+                <div class="imoj2_notif"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="cards1">
+                    <h2>3</h2>
+                    <p>Urgentes</p>
+                </div>
+            </div>
+
+            <div class="cards_notif">
+                <div class="imoj3_notif"><i class="fa-solid fa-calendar-day"></i></div>
+                <div class="cards1">
+                    <h2>23</h2>
+                    <p>Aujourd'hui</p>
+                </div>
+            </div>
+
+            <div class="cards_notif">
+                <div class="imoj4_notif"><i class="fa-solid fa-list"></i></div>
+                <div class="cards1">
+                    <h2>156</h2>
+                    <p>Total</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="filtre">
+            <div class="type">
+                <label for="Toutes">Type : </label><br>
+                <select name="Toutes" id="Toutes">
+                    <option value="Toutes">Toutes</option>
+                    <option value="stock">Stock</option>
+                    <option value="commande">Commandes</option>
+                    <option value="système">Système</option>
+                    <option value="securité">Sécurité</option>
+                </select>
+            </div>
+
+            <div class="type">
+                <label for="Toutes">Priorité : </label><br>
+                <select name="Toutes" id="Toutes">
+                    <option value="Toutes">Toutes</option>
+                    <option value="Urgent">Urgent</option>
+                    <option value="Haute">Haute</option>
+                    <option value="Moyenne">Moyenne</option>
+                    <option value="basse">Basse</option>
+                </select>
+            </div>
+
+            <div class="type">
+                <label for="Toutes">Statut : </label><br>
+                <select name="Toutes" id="Toutes">
+                    <option value="Toutes">Toutes</option>
+                    <option value="Non lues">Non lues</option>
+                    <option value="lues">Lues</option>
+                </select>
+            </div>
+            <div class="icon_filtre">
+                <p> <i class="fa-solid fa-filter"></i> Filtrer</p>
+            </div>
+        </div>
+        <!-- <div class="stocks_critique"> -->
+        <div class="commande1">
+            <div class="imoj4_comd"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div class="marque_1">
+                <div class="heure">
+                    <h2>Stock critique détecté</h2>
+                    <p>Il y a 5 minutes</p>
+                </div>
+                <p>Le produit "AirPods Pro 2" a atteint le seuil critique de stock (3 unités restantes). Veuillez passer
+                    commande rapidement.</p>
+                <div class="marque">
+                    <div class="pass1">
+                        <h3> Passer commande</h3>
+                    </div>
+                    <div class="pass2">
+                        <h3>Marquer comme lue</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="commande2">
+            <div class="imoj4_comd1"><i class="fa-solid fa-circle-info"></i></div>
+            <div class="marque_1">
+                <div class="heure">
+                    <h2>Nouvelle commande reçue</h2>
+                    <p>Il y a 15 minutes</p>
+                </div>
+                <p>Commande #CMD-2024-004 reçue de Marie Dubois pour un MacBook Pro 16" (€2,899.00)</p>
+                <div class="marque">
+                    <div class="pass1_1">
+                        <h3> Passer commande</h3>
+                    </div>
+                    <div class="pass2">
+                        <h3>Marquer comme lue</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="commande3">
+            <div class="imoj4_comd2"><i class="fa-solid fa-circle-check"></i></div>
+            <div class="marque_1">
+                <div class="heure">
+                    <h2>Commande expédiée</h2>
+                    <p>Il y a 1 heures</p>
+                </div>
+                <p>La commande #CMD-2024-003 a été expédiée avec succès. Numéro de suivi : FR123456789</p>
+                <div class="marque">
+                    <div class="pass1_2">
+                        <h3>Suivre l'envoi</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="commande4">
+            <div class="imoj4_comd3"><i class="fa-solid fa-gear"></i></div>
+            <div class="marque_1">
+                <div class="heure">
+                    <h2>Sauvegarde automatique terminée</h2>
+                    <p>Il y a 2 heures</p>
+                </div>
+                <p>Sauvegarde quotidienne des données terminée avec succès. 2.3 GB de données sauvegardées.</p>
+                <div class="marque">
+                    <div class="pass1_3">
+                        <h3>Voir les détails</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="commande5">
+            <div class="imoj4_comd4"><i class="fa-solid fa-shield"></i></div>
+            <div class="marque_1">
+                <div class="heure">
+                    <h2>Connexion depuis un nouvel appareil</h2>
+                    <p>Il y a 3 heures</p>
+                </div>
+                <p>Connexion détectée depuis un nouvel appareil (iPhone, Paris, France). Si ce n'est pas vous, changez
+                    votre mot de passe.</p>
+                <div class="marque">
+                    <div class="pass1_4">
+                        <h3> Sécuriser le compte</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="commande6">
+            <div class="box1">
+                <input type="checkbox" class="box">
+                <label for="#">Sélectionner tout: </label>
+            </div>
+            <div class="marque">
+                <div class="pass_checkbox">
+                    <i class="fa-solid fa-check"></i>
+                    <h3>Marquer comme lue</h3>
+                </div>
+                <div class="pass_box">
+                    <i class="fa-solid fa-trash"></i>
+                    <h3>Supprimer</h3>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- </div> -->
+
+
+    </section>
+
+
+    <div class="profile" id="sultan">
+
+        <div class="mon_profile">
+            <div class="card_users">
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Mon Profil</h3>
+                </div>
+                <a href="#close"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+
+            <div class="photo">
+                <div class="ron_im">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="tope">
+                    <h3>Changer la Photo</h3>
+                </div>
+            </div>
+
+            <div class="input_inscrip">
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="Administrateur" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="Jean" class="Nom">
+                </div>
+            </div>
+            <div class="input_inscrip">
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="email" placeholder="admin@dashboard.com" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="+33 6 12 34 56 78" class="Nom">
+                </div>
+            </div>
+
+            <div class="role">
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="Gestionnaire" class="role1">
+                </div>
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="15 Janvier 2024 à 14:30" class="role1">
+                </div>
+            </div>
+
+            <div class="save">
+                <div class="close">
+                    <p> Fermer</p>
+                </div>
+
+                <div class="sauve">
+                    <p>Sauvegarder</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

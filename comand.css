@@ -1,0 +1,172 @@
+/* ---- GLOBAL ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    display: flex;
+    background: #f5f6fa;
+}
+
+/* ---- SIDEBAR ---- */
+.sidebar {
+    width: 260px;
+    background: #12263a;
+    color: white;
+    height: 100vh;
+    padding: 25px;
+    position: fixed;
+}
+
+.logo {
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    padding: 12px 10px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu li.active,
+.menu li:hover {
+    background: #1e3d59;
+}
+
+.profil {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profil i {
+    font-size: 30px;
+}
+
+/* ---- MAIN ---- */
+.main {
+    margin-left: 260px;
+    padding: 30px;
+    width: 100%;
+}
+
+/* HEADER */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.notif {
+    position: relative;
+    margin-right: 20px;
+}
+
+.notif span {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.admin i {
+    margin-right: 6px;
+}
+
+/* ---- ORDER CARDS ---- */
+.order-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status.ongoing {
+    color: #1976d2;
+}
+
+.status.shipped {
+    color: #27ae60;
+}
+
+/* PRODUCT LINE */
+.product {
+    background: #f7f9fc;
+    padding: 15px;
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 40px 1fr 50px 100px;
+    align-items: center;
+    border-radius: 8px;
+    gap: 15px;
+}
+
+.product i {
+    font-size: 26px;
+}
+
+.info h4 span {
+    font-weight: 400;
+    color: #777;
+    font-size: 14px;
+}
+
+.qty, .price {
+    font-weight: bold;
+    text-align: right;
+}
+
+/* ---- BUTTONS ---- */
+.actions button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.details { background: #e8f1ff; color: #0048b5; }
+.edit { background: #f0f0f0; }
+.ship { background: #2196f3; color: white; }
+
+.follow { background: #e8f1ff; color: #0048b5; }
+.delivered { background: #27ae60; color: white; }
