@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sytle_test.css" />
+    <title>Menu Burger Sidebar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Checkbox caché -->
+
+
+    <!-- corps du travail -->
+
+   <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_test.css" />
+    <title>Notifications - Dashboard</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Checkbox du menu burger -->
+<input type="checkbox" id="toggle" hidden>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2 class="logo"><i class="fa-solid fa-chart-line"></i> Dashboard</h2>
+
+        <nav class="links">
+            <a href="#"><i class="fa-solid fa-table-columns"></i> Tableau de Bord</a>
+            <a href="#"><i class="fa-solid fa-chart-simple"></i> Analytics</a>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Commandes</a>
+            <a href="#"><i class="fa-solid fa-gear"></i> Paramètres</a>
+            <a href="#"><i class="fa-solid fa-file-lines"></i> Rapports</a>
+            <a class="active" href="#"><i class="fa-solid fa-bell"></i> Notifications</a>
+        </nav>
+
+        <div class="profile">
+            <div class="info">
+                <h4>Administrateur</h4>
+                <p>Gestionnaire</p>
+            </div>
+            <a href="#">Mon Profil</a>
+            <a href="#">Déconnexion</a>
+        </div>
+    </aside>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <label for="toggle" class="burger">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <h2>Gestion de Stock - Produits Électroniques</h2>
+
+        <div class="right">
+            <div class="notif">
+                <i class="fa-solid fa-bell"></i>
+                <span>3</span>
+            </div>
+            <div class="user">
+                <i class="fa-solid fa-user-circle"></i> Administrateur
+            </div>
+        </div>
+    </header>
+   </div>
+
+    <div class="corps">
+     
+
+      <main class="main-content">
+        <section class="Bord_principal_notif">
+          <div class="titre">
+            <h1><i class="fa-solid fa-bell"></i> Notifications & Alertes</h1>
+            <p>Centre de notifications et gestion des alertes système</p>
+          </div>
+
+          <div class="filtre">
+            <div class="type">
+              <label for="Toutes">Type : </label><br />
+              <select name="Toutes" id="Toutes">
+                <option value="Toutes">Toutes</option>
+                <option value="stock">Stock</option>
+                <option value="commande">Commandes</option>
+                <option value="système">Système</option>
+                <option value="securité">Sécurité</option>
+              </select>
+            </div>
+
+            <div class="type">
+              <label for="Toutes">Priorité : </label><br />
+              <select name="Toutes" id="Toutes">
+                <option value="Toutes">Toutes</option>
+                <option value="Urgent">Urgent</option>
+                <option value="Haute">Haute</option>
+                <option value="Moyenne">Moyenne</option>
+                <option value="basse">Basse</option>
+              </select>
+            </div>
+
+            <div class="type">
+              <label for="Toutes">Statut : </label><br />
+              <select name="Toutes" id="Toutes">
+                <option value="Toutes">Toutes</option>
+                <option value="Non lues">Non lues</option>
+                <option value="lues">Lues</option>
+              </select>
+            </div>
+            <div class="icon_filtre">
+              <p><i class="fa-solid fa-filter"></i> Filtrer</p>
+            </div>
+          </div>
+          <!-- <div class="stocks_critique"> -->
+          <div class="commande1">
+            <div class="imoj4_comd">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="marque_1">
+              <div class="heure">
+                <h2>Stock critique détecté</h2>
+                <p>Il y a 5 minutes</p>
+              </div>
+              <p>
+                Le produit "AirPods Pro 2" a atteint le seuil critique de stock
+                (3 unités restantes). Veuillez passer commande rapidement.
+              </p>
+              <div class="marque">
+                <div class="pass1">
+                  <h3>Passer commande</h3>
+                </div>
+                <div class="pass2">
+                  <h3>Marquer comme lue</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="commande2">
+            <div class="imoj4_comd1">
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <div class="marque_1">
+              <div class="heure">
+                <h2>Nouvelle commande reçue</h2>
+                <p>Il y a 15 minutes</p>
+              </div>
+              <p>
+                Commande #CMD-2024-004 reçue de Marie Dubois pour un MacBook Pro
+                16" (€2,899.00)
+              </p>
+              <div class="marque">
+                <div class="pass1_1">
+                  <h3>Passer commande</h3>
+                </div>
+                <div class="pass2">
+                  <h3>Marquer comme lue</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="commande3">
+            <div class="imoj4_comd2">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="marque_1">
+              <div class="heure">
+                <h2>Commande expédiée</h2>
+                <p>Il y a 1 heures</p>
+              </div>
+              <p>
+                La commande #CMD-2024-003 a été expédiée avec succès. Numéro de
+                suivi : FR123456789
+              </p>
+              <div class="marque">
+                <div class="pass1_2">
+                  <h3>Suivre l'envoi</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="commande4">
+            <div class="imoj4_comd3"><i class="fa-solid fa-gear"></i></div>
+            <div class="marque_1">
+              <div class="heure">
+                <h2>Sauvegarde automatique terminée</h2>
+                <p>Il y a 2 heures</p>
+              </div>
+              <p>
+                Sauvegarde quotidienne des données terminée avec succès. 2.3 GB
+                de données sauvegardées.
+              </p>
+              <div class="marque">
+                <div class="pass1_3">
+                  <h3>Voir les détails</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="commande5">
+            <div class="imoj4_comd4"><i class="fa-solid fa-shield"></i></div>
+            <div class="marque_1">
+              <div class="heure">
+                <h2>Connexion depuis un nouvel appareil</h2>
+                <p>Il y a 3 heures</p>
+              </div>
+              <p>
+                Connexion détectée depuis un nouvel appareil (iPhone, Paris,
+                France). Si ce n'est pas vous, changez votre mot de passe.
+              </p>
+              <div class="marque">
+                <div class="pass1_4">
+                  <h3>Sécuriser le compte</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="commande6">
+            <div class="box1">
+              <input type="checkbox" class="box" />
+              <label for="#">Sélectionner tout: </label>
+            </div>
+            <div class="marque">
+              <div class="pass_checkbox">
+                <i class="fa-solid fa-check"></i>
+                <h3>Marquer comme lue</h3>
+              </div>
+              <div class="pass_box">
+                <i class="fa-solid fa-trash"></i>
+                <h3>Supprimer</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

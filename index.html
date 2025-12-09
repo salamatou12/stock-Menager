@@ -4,50 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StockManager - Connexion</title>
-    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container">
-      <!-- ---- CARTE FORMULAIRE ---- -->
-      <div class="card form-card">
-        <h2>Connexion à StockManager<br />Dashboard</h2>
+    <div class="login-container">
 
-        <input type="text" placeholder="Nom d'utilisateur ou email" />
-        <input type="password" placeholder="Mot de passe" />
+    <div class="left-box">
+        <h2>Connexion à StockManager<br>Dashboard</h2>
 
-        <label class="remember">
-          <input type="checkbox" /> Se souvenir de moi
-        </label>
+        <input type="text" placeholder="Nom d'utilisateur ou email">
+        <input type="password" placeholder="Mot de passe">
 
-        <a href="dashboard.html">
-        <button class="btn">Se connecter</button>
-
-        </a>
-        <p class="links">
-          Mot de passe oublié ? <a href="#">Réinitialiser</a> <br>
-          Vous n'avez pas de compte ? <a href="./inscrire.html">Inscrivez-vous</a>
-        </p>
-      </div>
-
-      <!-- ---- CARTE WELCOME ---- -->
-      <div class="card2 welcome-card">
-        <div class="round">
-          <h1>SM</h1>
+        <div class="checkbox-box">
+            <input type="checkbox" id="remember">
+            <label for="remember">Se souvenir de moi</label>
         </div>
+<a href="dashboard.html">  <button>Se connecter</button> </a>
+       
 
-        <h2>Bienvenue dans StockManager</h2>
-
-        <p>
-          Gérez vos appareils électroniques, vos entrées et vos sorties de stock
-          facilement avec une interface claire et rapide.
-        </p>
-     <div>
-          <p>
-Gérez vos appareils électroniques, vos entrées et vos sorties de stock
-          facilement avec une interface claire et rapide.
-        </p>
-        
-      </div>
+        <div class="links">
+            <p>Mot de passe oublié ? <a href="#">Réinitialiser</a></p>
+            <p>Vous n'avez pas de compte ? <a href="inscrire.html">Inscrivez-vous</a></p>
+        </div>
     </div>
+
+    <div class="right-box">
+        <div class="logo-circle">SM</div>
+        <h1>Bienvenue dans StockManager</h1>
+        <p>Gérez vos appareils électroniques, vos entrées et vos sorties de stock facilement avec une interface claire et rapide.</p>
+    </div>
+
+</div>
+
   </body>
 </html>

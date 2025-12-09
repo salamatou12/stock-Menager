@@ -11,43 +11,52 @@
 <body>
 
     <!-- SIDEBAR -->
+   <input type="checkbox" id="toggle" hidden>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
     <aside class="sidebar">
         <h2 class="logo"><i class="fa-solid fa-chart-line"></i> Dashboard</h2>
 
-        <ul class="menu">
-            <li><i class="fa-solid fa-home"></i> Tableau de Bord</li>
-            <li><i class="fa-solid fa-chart-pie"></i> Analytics</li>
-            <li class="active"><i class="fa-solid fa-cart-shopping"></i> Commandes</li>
-            <li><i class="fa-solid fa-gear"></i> Paramètres</li>
-            <li><i class="fa-solid fa-file-lines"></i> Rapports</li>
-            <li><i class="fa-solid fa-bell"></i> Notifications</li>
-        </ul>
+        <nav class="links">
+            <a href="#"><i class="fa-solid fa-table-columns"></i> Tableau de Bord</a>
+            <a href="#"><i class="fa-solid fa-chart-simple"></i> Analytics</a>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Commandes</a>
+            <a href="#"><i class="fa-solid fa-gear"></i> Paramètres</a>
+            <a href="#"><i class="fa-solid fa-file-lines"></i> Rapports</a>
+            <a class="active" href="#"><i class="fa-solid fa-bell"></i> Notifications</a>
+        </nav>
 
-        <div class="profil">
-            <i class="fa-solid fa-user"></i>
-            <div>
+        <div class="profile">
+            <div class="info">
                 <h4>Administrateur</h4>
                 <p>Gestionnaire</p>
             </div>
+            <a href="#">Mon Profil</a>
+            <a href="#">Déconnexion</a>
         </div>
     </aside>
 
-    <!-- MAIN CONTENT -->
-    <main class="main">
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <label for="toggle" class="burger">
+            <i class="fa-solid fa-bars"></i>
+        </label>
 
-        <header class="topbar">
-            <h1>Gestion de Stock - Produits Électroniques</h1>
+        <h2>Gestion de Stock - Produits Électroniques</h2>
 
-            <div class="right">
-                <div class="notif">
-                    <i class="fa-solid fa-bell"></i>
-                    <span>3</span>
-                </div>
-                <div class="admin">
-                    <i class="fa-solid fa-user"></i> Administrateur
-                </div>
+        <div class="right">
+            <div class="notif">
+                <i class="fa-solid fa-bell"></i>
+                <span>3</span>
             </div>
-        </header>
+            <div class="user">
+                <i class="fa-solid fa-user-circle"></i> Administrateur
+            </div>
+        </div>
+    </header>
+   </div>
 
         <!-- CARTE 1 -->
         <section class="order-card">

@@ -3,71 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableau de Bord - Gestion Stock</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./analytics-styles.css">
+   <link rel="stylesheet" href="sytle_test.css">
+    <title>Menu Burger Sidebar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <!-- Checkbox caché -->
+    <input type="checkbox" id="toggle" class="toggle">
 
-<div class="container">
-    
-<input type="checkbox" id="toggle" hidden>
+    <!-- Bouton Burger -->
+    <label for="toggle" class="burger">
+        <div class="menu">
+            <h1>logo</h1>
+              ☰
+        </div>
+    </label>
 
-<div class="layout">
-
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-        <h2 class="logo"><i class="fa-solid fa-chart-line"></i> Dashboard</h2>
-
-        <nav class="links">
-            <a href="#"><i class="fa-solid fa-table-columns"></i> Tableau de Bord</a>
-            <a href="#"><i class="fa-solid fa-chart-simple"></i> Analytics</a>
-            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Commandes</a>
-            <a href="#"><i class="fa-solid fa-gear"></i> Paramètres</a>
-            <a href="#"><i class="fa-solid fa-file-lines"></i> Rapports</a>
-            <a class="active" href="#"><i class="fa-solid fa-bell"></i> Notifications</a>
-        </nav>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="side">
+        <div class="lien">
+            <h3><i class="fa-solid fa-table-columns"></i> Tableau de Bord</h3>
+            <p><i class="fa-solid fa-chart-line"></i> Dashboard</p>
+            <p><i class="fa-solid fa-chart-simple"></i> Analytics</p>
+            <p><i class="fa-solid fa-bag-shopping"></i> Commandes</p>
+            <p><i class="fa-solid fa-gear"></i> Paramètres</p>
+            <p><i class="fa-solid fa-file-lines"></i> Rapports</p>
+            <p><i class="fa-solid fa-bell"></i> Notifications</p>
+        </div>
 
         <div class="profile">
-            <div class="info">
+            <div>
                 <h4>Administrateur</h4>
                 <p>Gestionnaire</p>
             </div>
-            <a href="#">Mon Profil</a>
-            <a href="#">Déconnexion</a>
+            <h4>Profil</h4>
+            <h4>Deconnexion</h4>
+        </div>
+        </div>
+    </div>
+
+    <!-- corps du travail -->
+
+
+
+
+
+<div class="container">
+    <header class="navbar">
+        <div class="entete">
+            <h2 class="logo"><i class="fa-solid fa-chart-line"></i> Dashboard</h2>
+            <h2>Gestion de Stock - Produits Électroniques</h2>
+        </div>
+    
+
+    <div class="right">
+        <div class="notif">
+            <i class="fa-solid fa-bell"></i>
+            <span>3</span>
+        </div>
+
+        <div class="user">
+            <i class="fa-solid fa-user-circle"></i>
+            Administrateur
+        </div>
+    </div>
+</header>
+
+
+
+<div class="corps">
+
+
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar_conte">
+        
+        <div class="side">
+            <h2 class="logo"><i class="fa-solid fa-chart-line"></i> Dashboard</h2>
+        <div class="lien">
+            <h3><i class="fa-solid fa-table-columns"></i> Tableau de Bord</h3>
+            <p><i class="fa-solid fa-chart-simple"></i> Analytics</p>
+            <p><i class="fa-solid fa-bag-shopping"></i> Commandes</p>
+            <p><i class="fa-solid fa-gear"></i> Paramètres</p>
+            <p><i class="fa-solid fa-file-lines"></i> Rapports</p>
+            <p><i class="fa-solid fa-bell"></i> Notifications</p>
+        </div>
+
+        <div class="profile">
+            <div>
+                <h4>Administrateur</h4>
+                <p>Gestionnaire</p>
+            </div>
+            <h4>Profil</h4>
+            <h4>Deconnexion</h4>
+        </div>
         </div>
     </aside>
-
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <label for="toggle" class="burger">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-
-        <h2>Gestion de Stock - Produits Électroniques</h2>
-
-        <div class="right">
-            <div class="notif">
-                <i class="fa-solid fa-bell"></i>
-                <span>3</span>
-            </div>
-            <div class="user">
-                <i class="fa-solid fa-user-circle"></i> Administrateur
-            </div>
-        </div>
-    </header>
-   </div>
-
-
-    <!-- MAIN CONTENT -->
-    <main class="main">
-
-        <!-- DASHBOARD TITLE -->
-        <section class="title">
-            <h2>Tableau de Bord Principal</h2>
-            <p>Gestion des stocks de produits électroniques</p>
-        </section>
 
         <!-- Main Content -->
         <main class="main-content">
@@ -208,11 +240,8 @@
                 </div>
             </div>
         </main>
-
-       
-
-    </main>
-
+        </div>
+   
 </div>
 
 </body>
