@@ -58,12 +58,16 @@ body {
 }
 
 .checkbox-box {
+    
     display: flex;
-    align-items: center;
-    gap: 8px;
+    align-items:center;
+    justify-content: start;
+    gap: 2px;
     margin: 10px 0 15px;
 }
-
+#remember{
+    width: 50px;
+}
 .left-box button {
     width: 100%;
     padding: 13px;
